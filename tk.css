@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.main{
+    width: 700px;
+    border: 1px solid red;
+    margin: auto;
+    position: relative;
+}
+.main>ul{
+    display: flex;
+}
+.main>ul>li{
+    border: 1px solid green;
+    padding: 10px;
+    
+}
+ul li:hover{
+    background: purple;
+}
+.sub{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+.sub>ul{
+    border: 1px solid purple;
+}
+.sub>ul>li{
+    border: 1px solid green;
+    padding: 10px;
+    
+}
+.main>ul>li:hover .sub{
+    opacity: 1;
+    visibility: visible;
+}
